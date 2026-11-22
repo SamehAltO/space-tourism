@@ -11,7 +11,11 @@ function Header({ setActivePage}) {
   let closeBtn = document.querySelector('header .toggle button.close')
   function handleActive(e) {
 
+<<<<<<< HEAD
     document.querySelector('body').style.backgroundImage = `url(${'../assets/'}${e.target.dataset.link}/background-${e.target.dataset.link}-desktop.jpg)`
+=======
+    document.querySelector('body').style.backgroundImage = `url(${'./assets/'}${e.target.dataset.link}/background-${e.target.dataset.link}-desktop.jpg)`
+>>>>>>> eb396ce5c2d9e6b3179e2bcf684d38452d45913c
 
     Array.from(e.target.parentElement.parentElement.children).forEach(el => el.querySelector('button').classList.remove('active'))
     e.target.classList.add('active')
