@@ -5,7 +5,7 @@ function Landing({setActivePage}) {
 
     (Array.from(document.querySelectorAll('header ul li button')).forEach(el => el.classList.remove('active')))
     document.querySelectorAll('header ul li button')[1].classList.add('active')
-    document.querySelector('body').style.backgroundImage = 'url(../src/assets/destination/background-destination-desktop.jpg)'
+    document.querySelector('body').style.backgroundImage = 'url(../assets/destination/background-destination-desktop.jpg)'
 
   }
 

@@ -1,5 +1,5 @@
 import { useState } from "react"
-import localData from '../data.json'
+
 import Header from "./components/Header"
 import Landing from "./components/Landing"
 import Destination from "./components/Destination"
@@ -18,14 +18,13 @@ let allNavLinks = document.querySelectorAll('header ul li button')
 
 
 function App() {
-  // console.log(localData)
+
   const [activePage, setActivePage] = useState('home')
     allNavLinks.forEach(link => {
     link.addEventListener('click', (e) => {
 
       e.preventDefault()
-      // console.log(e.target.dataset.link)
-        // container.style.backgroundImage = 
+
 
     // console.log(document.querySelector('.container'))
     Array.from(e.target.parentElement.parentElement.children).forEach(el => el.querySelector('button').classList.remove('active'));

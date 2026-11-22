@@ -11,7 +11,7 @@ function Header({ setActivePage}) {
   let closeBtn = document.querySelector('header .toggle button.close')
   function handleActive(e) {
 
-    document.querySelector('body').style.backgroundImage = `url(${'./src/assets/'}${e.target.dataset.link}/background-${e.target.dataset.link}-desktop.jpg)`
+    document.querySelector('body').style.backgroundImage = `url(${'../assets/'}${e.target.dataset.link}/background-${e.target.dataset.link}-desktop.jpg)`
 
     Array.from(e.target.parentElement.parentElement.children).forEach(el => el.querySelector('button').classList.remove('active'))
     e.target.classList.add('active')
@@ -50,17 +50,17 @@ function Header({ setActivePage}) {
           </button>
           </li>
         <li>
-          <button onClick={(e) => {setActivePage('destinations');  handleActive(e);}} data-link="destination">
+          <button onClick={(e) => {setActivePage('destinations'); handleActive(e);}} data-link="destination">
             <strong data-link="destination">01</strong> Destination
           </button>
         </li>
         <li>
-          <button onClick={(e) => {setActivePage('crew');  handleActive(e);}} data-link="crew">
+          <button onClick={(e) => {setActivePage('crew'); handleActive(e);}} data-link="crew">
             <strong data-link="crew">02</strong> Crew
           </button>
         </li>
         <li>
-          <button onClick={(e) => {setActivePage('technology');  handleActive(e)}} data-link="technology">
+          <button onClick={(e) => {setActivePage('technology'); handleActive(e)}} data-link="technology">
             <strong data-link="technology">03</strong> Technology
           </button>
         </li>
